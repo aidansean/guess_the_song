@@ -1,0 +1,238 @@
+div#notice{
+  background : #ffdddd ;
+  text-align : center ;
+}
+table.main{
+  margin : auto ;
+}
+input#submit_quit{
+  color : white ;
+  background : red ;
+}
+input#submit_hint{
+  color : black ;
+  background : yellow ;
+}
+input#submit_begin{
+  color : white ;
+  background : green ;
+}
+input#submit_easy{
+  color : black ;
+  background : white ;
+}
+input#submit_hard{
+  color : black ;
+  background : white ;
+}
+input#submit_quit, input#submit_begin, input#submit_hint, input#submit_easy, input#submit_hard{
+  margin-left : 5px ;
+  margin-right : 5px ;
+  margin : auto ;
+  border : 2px solid black ;
+  width : 200px ;
+}
+td.buttons{
+  text-align : center ;
+  padding : 0px ;
+  width : 225px ;
+}
+span.word_hidden{
+  color : white ;
+  border-bottom : 2px solid black ;
+}
+span.word_shown{ color : black ; }
+span.word_hinted{ color : blue ; }
+span.viewable{ color : black ; }
+th.th_guess, #input_word, #input_artist, #input_title, input#submit_quit, input#submit_begin, input#submit_hint, input#submit_easy, input#submit_hard{
+  font-size : 16pt ;
+  text-align : center ;
+}
+th.th_guess{
+  text-align : left ;
+}
+input.input_fail   { border : 2px solid   red ; }
+input.input_neutral{ border : 2px solid black ; }
+input.input_succeed{ border : 2px solid green ; }
+
+div#big_wrapper{
+  display : table ;
+}
+div#song_wrapper{
+  display : table-cell ;
+  font : 12pt courier , monospace ;
+  background : white ;
+  padding : 1em ;
+  line-height : 2em ;
+  margin-top : 1em ;
+  border : 2px solid black ;
+  width : 500px ;
+}
+div#song_column{
+  display : table-cell ;
+  width : 250px ;
+}
+
+table#table_stats{
+  margin-left : 20px ;
+  border-collapse : collapse ;
+}
+th.spacer{
+  height : 10px ;
+}
+th.stats, td.stats{
+  text-align : center ;
+  width : 100px ;
+  font : 16pt arial , sans-serif ;
+  padding : 5px ;
+}
+th.stats{
+  text-align : right ;
+}
+td.stats{
+  text-align : left ;
+}
+th.th_guess, td.td_guesses{
+  width : 200px ;
+}
+th#th_correct_guess{
+  border-top    : 2px solid green ;
+}
+th#th_correct_guess, td#td_correct_guesses{
+  border-bottom : 2px solid green ;
+  background-color : #ddffdd ;
+}
+th#th_incorrect_guess{
+  border-top    : 2px solid red ;
+}
+th#th_incorrect_guess, td#td_incorrect_guesses{
+  border-bottom : 2px solid red ;
+  background-color : #ffdddd ;
+}
+th#th_hints_words{
+  border-top    : 2px solid yellow ;
+}
+th#th_hints_words, td#td_hints_words{
+  border-bottom : 2px solid yellow ;
+  background-color : #ffffdd ;
+}
+td#td_correct_guesses, td#td_incorrect_guesses, td#td_hints_words{
+  padding : 5px ;
+  font-size : 12pt ;
+}
+
+h3#h3_quotes{
+  margin-top : 25px ;
+}
+p.quote{
+  font : 16pt georgia , serif ;
+  font-style : italic ;
+  padding-left : 2em ;
+  padding-right : 2em ;
+}
+
+p#song_number, p#p_song_link{
+  font : 11pt arial , sans-serif ;
+  padding-left  : 1em ;
+  padding-right : 1em ;
+}
+
+
+div#achievements{
+  display : table ;
+  width : 550px ;
+  margin : auto ;
+}
+table#table_achievements{
+  width : 750px ;
+  border-collapse : separate ;
+}
+td.achievement{
+  width : 140px ;
+  text-align : center ;
+  vertical-align : top ;
+  padding : 10px ;
+}
+p.achievement_desc{
+  width : 120px ;
+}
+p.achievement_text{
+  display : table-cell ;
+  background : gray ;
+  color : white ;
+  width  : 110px ;
+  height : 110px ;
+  border : 5px solid gray ;
+  text-align : center ;
+  vertical-align : middle ;
+  font : 18pt arial , sans-serif ;
+  margin-bottom : 0px ;
+}
+p.achievement_text_huge{
+  font : 40pt arial , sans-serif ;
+}
+p.achievement_desc, p.achievement_desc_achieved{
+  margin-bottom : 0px ;
+  text-align : center ;
+  vertical-align : middle ;
+  margin-top : 0px ;
+  font : 10pt courier , monospace ;
+  color : rgb(150,150,150) ;
+}
+p.achievement_desc_achieved{
+  color : black ;
+}
+
+p.achievement_SONG1           { border : 5px solid rgb(  0,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(225,255,225) ; }
+p.achievement_SONG5           { border : 5px solid rgb(  0,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(200,255,200) ; }
+p.achievement_SONG10          { border : 5px solid rgb(  0,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(175,255,175) ; }
+p.achievement_SONG25          { border : 5px solid rgb(  0,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(150,255,150) ; }
+p.achievement_SONG50          { border : 5px solid rgb(  0,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(125,255,125) ; }
+
+p.achievement_TOOEASY         { border : 5px solid rgb(  0,  0,255) ; color : rgb(  0,  0,255) ; background : rgb(200,200,255) ; }
+p.achievement_RAGEQUIT        { border : 5px solid rgb(255,  0,  0) ; color : rgb(255,  0,  0) ; background : rgb(255,200,200) ; }
+p.achievement_LIKEAPRO        { border : 5px solid rgb(  0,255,255) ; color : rgb(  0,  0,  0) ; background : rgb(200,255,225) ; }
+p.achievement_BEENHEREBEFORE  { border : 5px solid rgb(200,200,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,215,  0) ; }
+p.achievement_CLOCKSUCKER     { border : 5px solid rgb(255,200,200) ; color : rgb(255,255,255) ; background : rgb(220, 20, 60) ; }
+
+p.achievement_SUBZERO         { border : 5px solid rgb(  0,  0,255) ; color : rgb(255,255,255) ; background : rgb(  0,  0,255) ; }
+p.achievement_SCORE           { border : 5px solid rgb(  0,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(200,255,200) ; }
+p.achievement_HIGHSCORE       { border : 5px solid rgb(255,255,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,255,200) ; }
+p.achievement_TOPSCORE        { border : 5px solid rgb(255,  0,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,200,200) ; }
+p.achievement_BADSCORE        { border : 5px solid rgb(  0,  0,  0) ; color : rgb(255,255,255) ; background : rgb(  0,  0,  0) ; }
+
+p.achievement_TRYTHIS         { border : 5px solid rgb(  0,  0,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,255,225) ; }
+p.achievement_ALMOSTTHERE     { border : 5px solid rgb(  0,  0,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,255,200) ; }
+p.achievement_HAPPYENDING     { border : 5px solid rgb(  0,  0,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,255,175) ; }
+p.achievement_SWEAR           { border : 5px solid rgb(  0,  0,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,255,150) ; }
+p.achievement_ALLDONE         { border : 5px solid rgb(  0,  0,  0) ; color : rgb(  0,  0,  0) ; background : rgb(255,255,125) ; }
+
+
+th.prog{
+  width : 60px ;
+  height : 25px ;
+}
+td.prog_song_n, td.prog_song_easy, td.prog_song_hard{
+  width : 25px ;
+  height : 25px ;
+  text-align : center ;
+  vertical-align : middle ;
+}
+td.prog_song_n{
+  background : gray ;
+  color : rgb(255,255,255) ;
+}
+td.prog_song_easy{
+  background : rgb(255,255,200) ;
+}
+td.prog_song_hard{
+  background : rgb(200,255,200) ;
+}
+td.prog_song_easy_done{
+  background : rgb(255,255,0) ;
+  border : 1px solid black ;
+}
+td.prog_song_hard_done{
+  background : rgb(100,255,100) ;
+  border : 1px solid black ;
+}

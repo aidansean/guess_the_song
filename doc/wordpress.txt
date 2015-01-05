@@ -1,0 +1,23 @@
+This project is a fun game where the user had to guess the song by guessing the lyrics, hangman style, with whole words instead of letters.
+
+<h3>Links</h3>
+
+<a href="http://www.aidansean.com/guess_the_song/">Live page</a>
+<a href="https://github.com/aidansean/guess_the_song">GitHub repository</a>
+
+<h3>Overview</h3>
+
+The script loads a song randomly and displays blank spaces for the lyrics on the screen.  The user then enters guesses and the script checks for matches, keeping track of which words have already been suggested by the user.  The score depends on the total number of guesses, the time, and whether the user chooses the hard or easy mode.
+
+<h3>Challenges</h3>
+<dl>
+<dt><em>Challenge</em>: The lyrics must be hidden from the user.</dt>
+
+<dd><em>Solution</em>: Initally the lyrics were "whited out", but some users simply highlighted the lyrics to cheat.  To prevent this the lyrics were replaced with underlined monospaced blank characters.  (Resolved)</dd>
+<dt><em>Challenge</em>: The users should be able to collect achievements, to encourage subsequent visits.</dt>
+
+<dd><em>Solution</em>: I don't usually pester my users to come back a second time, but with this game it seemed natural to do so.  User's gain achievements for various actiosn which are then stored via AJAX to the MySQL backend, building on previous knowledge of these methods.  The achievements are then highlighted by changing the CSS of HTML elements.  The user id is store in a cookie, and can be recovered by copying and pasting a uri. (Resolved)</dd>
+<dt><em>Challenge</em>: The users interface should be as intuitive as possible.</dt>
+
+<dd><em>Solution</em>: As usual the user interface is a significant stumbling block, and what is obvious to the designer si not obvious to the user.  After some iterating with friends the user interface was adapted based on their feedback, and now the game starts with the correct element on focus so that the user can start guessing immediately. (Resolved)</dd>
+</dl>
