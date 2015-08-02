@@ -3,9 +3,13 @@ from project_module import project_object, image_object, link_object, challenge_
 p = project_object('guess_the_song', 'Guess the song')
 p.domain = 'http://www.aidansean.com/'
 p.path = 'guess_the_song'
-p.preview_image_ = image_object('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg', 408, 287)
+p.preview_image    = image_object('%s/images/project.jpg'   %p.path, 150, 250)
+p.preview_image_bw = image_object('%s/images/project_bw.jpg'%p.path, 150, 250)
+p.folder_name = 'aidansean'
 p.github_repo_name = 'guess_the_song'
 p.mathjax = False
+p.tags = 'Games'
+p.technologies = 'AJAX,cookies,HTML,JavaScript,MySQL,PHP'
 p.links.append(link_object(p.domain, 'guess_the_song/', 'Live page'))
 p.introduction = 'This project is a fun game where the user had to guess the song by guessing the lyrics, hangman style, with whole words instead of letters.'
 p.overview = '''The script loads a song randomly and displays blank spaces for the lyrics on the screen.  The user then enters guesses and the script checks for matches, keeping track of which words have already been suggested by the user.  The score depends on the total number of guesses, the time, and whether the user chooses the hard or easy mode.'''
